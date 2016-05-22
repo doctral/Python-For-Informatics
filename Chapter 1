@@ -1,0 +1,25 @@
+1. CPU
+2. Main memory: the main memory is nearly as fast as the CPU. But the information stored in main memory vanishes when the computer is turned off.
+3. The secondary memory: much slower than the main memory, but more stable.
+4. Input and output devices.
+5. Network.
+
+##################################################
+The reserved words in Python:
+
+and del for is raise assert elif from lambda return 
+break else global not try class except if or while
+continue exec import pass yield def nally in print
+###################################################
+
+Machine language is not portable across different types of hardware since machine language is tied to the computer hardware.
+But the programs written in high-level language can be moved between different computers.
+
+##################################################
+Three types of programming errors:
+1. Syntax error: violation of grammar rules of the programming language.
+2. Logic error: occurs due to the poor understanding of the problem.
+3. Semantic error: occurs due to the wrong use of the variables.
+
+ 
+
