@@ -1,0 +1,12 @@
+print(23, 23, 34)    // python print these integers as comma-separated sequence of integers 
+
+** performs exponentiation, e.g. 5**2 == 25
+/ performs float division, // performs integer division 
+
+rules of precedence: parentheses, exponentiation, multiplication/ division, addition/subtraction
+
+###################################
+Asking the user for input: using the key word 'input'
+e.g. name=input('what is your name?\n')
+
+comments: using symbol #
