@@ -1,0 +1,15 @@
+3.1 Boolean Expression
+==, is , is not.
+== is for value equality, while 'is' is for reference equality
+
+3.2 Logical expression
+and, or , not
+
+3.7 Catching exceptions using try and except
+try:
+   statement 1
+   statement 2
+   ...
+except:
+   statement 1 
+   ...
