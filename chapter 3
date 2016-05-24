@@ -13,3 +13,12 @@ try:
 except:
    statement 1 
    ...
+
+############################
+Concatenate String and float:
+e.g.:
+a=5
+name='Hello'
+print (name, c)
+or:
+print (name+str(c))
