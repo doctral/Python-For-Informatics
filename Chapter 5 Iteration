@@ -1,0 +1,9 @@
+1. while condition :
+        statement 1
+        statement 2
+        
+2. for variable in range:
+        statement 1
+        statement 2
+        ...
+        
