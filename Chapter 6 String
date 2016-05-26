@@ -11,3 +11,5 @@ The operator [n:m] returns the part of the string from the n-eth character (incl
 4. in is a boolean operator that takes two strings and return True if the first appears as a substring in the second
 
 5. Comparison operators (==, >, <, ... ) work on strings. 
+
+6. String format: %d, integer, %g, float, %s, string
