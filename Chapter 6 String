@@ -1,0 +1,13 @@
+1. To get a letter of a string, in python, negative indices could be applied.
+    e.g: name='american'
+         letter=name[-1]
+    then letter is 'n', which is the last letter of the string, index -2 is the second to last letter, and so on     
+    
+2. String slices:
+The operator [n:m] returns the part of the string from the n-eth character (including) to the m-eth character (excluding), and the operator can just have one index
+
+3. Strings are immutable, which means an existing string cannot be changed.
+
+4. in is a boolean operator that takes two strings and return True if the first appears as a substring in the second
+
+5. Comparison operators (==, >, <, ... ) work on strings. 
