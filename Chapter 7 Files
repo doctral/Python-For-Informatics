@@ -1,0 +1,13 @@
+1. Open and Read files:
+file=open('filename.txt')  # open is a key word
+
+2. Using try and except to handle exceptions
+
+3. Writting files
+   1) Create a file to write using: file=open('filename', 'w') # 'w' means write
+   If the file already exists, opening it in write mode clears out the old data and starts fresh.
+   If the file does not exist, a new file will be created then
+   2) Write data using file.write('content')
+   3. Close the writing file using: file.write()
+   
+   
