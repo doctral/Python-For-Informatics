@@ -1,0 +1,28 @@
+1. The elements of a list don't have to be the same type. A list within another list is nested.
+
+2. Lists are mutable.
+
+3. List operations:
+   1) + operator: concatenates lists 
+   2) * operator repeats a list a given number of times
+   3) The slice operator also works on lists.
+   
+4. List method:   
+   1) append(element): append an element to the end of the list
+   2) extend(list): append all elements in list t the end of another list
+   3) sort(): sort all elements in list from low to high
+   4) pop(index): delete the element with the given index, and return the remaining list
+   5) pop(): delete and return the last element in the list
+   6）del list[index]: delete element with given index in the list
+   7) remove(element): remove the specific element
+
+5. Functions: sum, max, min, len
+
+6. Convert a string to list: using list(string), or split(), or split(delimiter) delimiter=' ', ',', and so on
+
+############################## IMPORTANT RULE*************************************************** 
+7. An object with more than one reference has more than one name, then this object is aliased. If this object is mutable, changes made with one alias effect the others 
+
+
+
+   
