@@ -1,0 +1,10 @@
+1. A dictionary is a mapping between a set of indices (keys) and a set of values, each key maps to a value.
+   The association of a key and a value is an item.
+   
+2. The dict function creates a new dictionary, e.g: lib=dict()
+  1) To add item to the dictionary, using: lib[key]=value 
+  2) To delete an item from the dictionary: del lib[key] 
+
+3.  The get method: get(key, default_value), it takes a key and a default value, if the key appears in the dictionary, get returns the corresponding value, otherwise, it returns the default value.
+
+ 
