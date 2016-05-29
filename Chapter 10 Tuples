@@ -1,0 +1,14 @@
+1. The value stored in a tuple can be any type, and they are indexed by integers.
+2. Tuples are immutable, comparable, and hashable.
+3. To create a tuple with a single element, you have to include the final comma.
+    e.g.: t=('a',)
+    Another way to create an empty tuple is using built-in function tuple()
+    e.g: t=tuple()
+    
+    If you try to modify the element in tuple, you get an error message
+
+4 Comparison: python starts comparison from the first element from each sequence.
+
+5. Dictionary has a method called item() that returns a list of tuples, where each tuple is a key-value pair.
+
+
