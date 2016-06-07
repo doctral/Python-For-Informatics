@@ -1,0 +1,39 @@
+1. The regular expression library must be imported before it can be used: import re
+
+2. Special characters:
+   1). '.', dot, matches any character except a newline
+   2). '^', caret, matches the start of the string, and in MULTILINE mode also matches immediately after each newline.
+   3). '+', causes the resulting RE to match 1 or more repetitions of the preceding RE. a+b will match ‘a’ followed 
+            by any non-zero number of ‘b’s; it will not match just ‘a’.
+   4). '$', matches the end of the string or just before the newline at the end of the string, and in MULTILINE mode
+            also matches before a newline.      
+   5). '*', causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are 
+            possible. ab* will match ‘a’, ‘ab’, or ‘a’ followed by any number of ‘b’s.
+   6). '\S', non-whitespace character   
+   7). '\s', a whitespace character
+   8). '*?', applies to the immediately preceding character and indicates to match zero or
+             more of the preceding character in “non-greedy mode”.
+   9). '+?', applies to the immediately preceding character and indicates to match zero or
+             more of the preceding character in “non-greedy mode”.         
+2. Functions
+   1) search:
+      re.search(target, line)   e.g.:  line='Hello world!'
+                                       if re.search('h.+o', line):
+                                           print(line)
+   2) findall:
+      re.findall(target, source): e.g.: to extract all email address, we use [a-zA-Z0-9]\S*@\S*[a-zA-Z] as the target argument
+      Here, the argument in [] showing the range of the last character is from a to z, or A to Z, or 0 to 9, and non-whitespace, around @.
+      For example: x = re.findall('[a-zA-Z0-9]\S+@\S+[a-zA-Z]', line)
+      This applies in search method.
+      
+   3) Combining searching and extracting:
+      We use findall method to do this, and just add parentheses around the part we want to extract
+      e.g: x = re.findall('ˆDetails:.*rev=([0-9.]+)', line)
+      In this instance, findall will search all strings startswith 'Details:', and then extract all float numbers
+      
+      e.g.: x = re.findall('ˆFrom .* ([0-9][0-9]):', line)
+      In this instance, findall will search all strings startswith 'From ' with '[0-9][0-9]:', then print out the two digits
+    
+    4) Escape character: to simply match a character such as @#$%, we do this by prefixing that character with a backslash \.  
+For more information, please see:      
+https://docs.python.org/3/library/re.html      
