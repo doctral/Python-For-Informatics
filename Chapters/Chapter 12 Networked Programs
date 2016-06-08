@@ -48,4 +48,5 @@ html=url.urlopen(web).read().decode('utf-8')
 links=re.findall('href="(http://.*?)"', html)
 for link in links:
       print(link)
-   
+
+url== protocol+host+document   
