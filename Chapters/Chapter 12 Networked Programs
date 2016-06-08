@@ -1,0 +1,51 @@
+1. A socket is much like a file, except that it provides a two-way connection between two program with a single socket.
+
+2. A simple program that makes a connection to a web server and following the rules of the HTTP protocol, request a document and displays what the server sends back.
+  
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('www.py4inf.com', 80))
+mess='GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n'
+mysock.send(mess.encode('utf-8'))
+while True:
+      data = mysock.recv(512)
+      if ( len(data) < 1 ) :
+            break
+      print (data.decode('utf-8'))
+    
+mysock.close()
+
+3. Retrieving web pages with urllib
+   The urllib library makes it very easy to retrieve web pages and process the data in Python.
+   Using urllib you can treat a web page much like a file.
+   
+import urllib.request as url
+s=url.urlopen('http://www.py4inf.com/code/romeo.txt')
+for line in s:
+      print(line.strip().decode('utf-8'))   
+
+4. A program to retrieve the data from a web page and compute the frequency of each word in the file as follows:
+import urllib.request as url
+s=url.urlopen('http://www.py4inf.com/code/romeo.txt')
+
+counts=dict()
+
+for lines in s:
+      line=lines.strip().decode('utf-8')
+      words=line.split()
+      for word in words:
+            counts[word]=counts.get(word, 0)+1
+            
+print (counts)
+
+5. Parsing HTML using Regular expression
+
+import urllib.request as url
+import re
+
+web=input('Enter web address:')
+html=url.urlopen(web).read().decode('utf-8')
+links=re.findall('href="(http://.*?)"', html)
+for link in links:
+      print(link)
+   
