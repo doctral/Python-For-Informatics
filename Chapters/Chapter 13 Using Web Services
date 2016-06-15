@@ -3,3 +3,10 @@
 2. XML is more structured than HTML, as a tree structure.
 3. There are two commonly used formats to represent data going between applications and across networks: XML and JSON
 4. Python dictionary serialize, and then deserialize to Java HashMap
+
+5. XML Terminology:
+Tags: indicate the beginning and ending of elements
+Attributes: keyword/value pairs on the opening tag of XML
+Serialize/De-Serialize: convert data in open program into a common format that can be stored and/or transmitted between
+                        systems in a programming language-independent manner
+                        
