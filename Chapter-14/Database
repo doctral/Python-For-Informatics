@@ -1,0 +1,5 @@
+1. A database is a file that is organized for storing data. Database is on disk, while dictionary is limited to
+   the size of the memory in the computer.
+2. SQLite is a very common database system and is already built into Python.
+
+3. The primary data structure in a database are: tables, rows, columns, or named as relation, tuple, and attribute.
