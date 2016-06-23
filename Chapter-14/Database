@@ -3,3 +3,6 @@
 2. SQLite is a very common database system and is already built into Python.
 
 3. The primary data structure in a database are: tables, rows, columns, or named as relation, tuple, and attribute.
+
+4. The JOIN operation links across several tables as part of a select operation, and you must tell the JOIN
+   how to use the keys that make the connection between the tables using an on clauss.
